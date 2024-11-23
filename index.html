@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>信託規劃基本資料</title>
+    <title>信託線上申請</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
             color: #333;
-            padding: 20px;
+            padding: 0;
             margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            width: 90%;
+            width: 95%;
             max-width: 600px;
-            background: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
-            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.95); /* 半透明白色背景 */
+            border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #4CAF50; /* 深绿色标题 */
+            margin-bottom: 20px;
+            font-size: 24px;
         }
         label {
             display: block;
             margin: 10px 0 5px;
             font-weight: bold;
             color: #333;
+            font-size: 14px;
         }
         input[type="text"], input[type="number"] {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: 14px;
         }
         button {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             background-color: #4CAF50; /* 按钮绿色 */
             color: white;
             border: none;
@@ -54,13 +62,24 @@
             margin-top: 20px;
             text-align: center;
             color: #333;
-            font-size: 18px;
+            font-size: 16px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+            label, input, button {
+                font-size: 14px;
+            }
+            button {
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>信託規劃基本資料</h1>
+        <h1>信託線上申請</h1>
         <form id="trustForm">
             <label for="clientName">客戶姓名</label>
             <input type="text" id="clientName" name="clientName" placeholder="輸入客戶姓名" required>
